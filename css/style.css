@@ -80,6 +80,12 @@ main .titulo {
     padding: 20px;
 }
 
+main .titulo:hover {
+    color: rgba(47, 133, 133, 0.521);
+    transform:skew(8deg)
+
+}
+
 .grid-container {
 
     display: grid;
