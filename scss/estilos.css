@@ -33,15 +33,6 @@ header nav ul a:hover {
   font-weight: bold;
 }
 
-main .titulo {
-  font-size: 30px;
-  font-weight: bold;
-  color: rgba(57, 64, 50, 0.76);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
 main .titulo:hover {
   color: rgba(47, 133, 133, 0.521);
   transform: skew(8deg);

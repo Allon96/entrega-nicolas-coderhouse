@@ -77,6 +77,9 @@ body, html {
 main {
     min-height: 80vh;
     background-color: rgba(88, 123, 127, 0.274);
+    /* background-image:url(../imagenes/tienda4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
 }
 main .titulo {
     font-size: 30px;
@@ -103,6 +106,8 @@ main .titulo:hover {
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
+    /* background-color: rgba(255, 255, 255, 0.541);
+    border-radius: 95px; */
 }
 
 .grid-container img {

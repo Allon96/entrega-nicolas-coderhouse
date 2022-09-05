@@ -1,0 +1,9 @@
+1-Coloque etiquetas metas de contenido en cada pagina
+index: Los mejores Comics y cultura pop en un solo lugar
+nosotros: Conocenos un poco mas
+novedades: Nuestras novedades y nuevas noticias
+categorias: Todos nuestros productos
+contacto: Envianos tu consulta
+
+2- Se coloca keyword en todas las paginas.
+comics, tienda, libros, manga, pop, cultura, funko, coleccion, series, peliculas, novelas, nosotros, contacto, novedades, noticias
