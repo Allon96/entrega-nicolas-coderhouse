@@ -17,9 +17,9 @@ body, html {
     height: 100%;
     position: relative;
 }
-
+/* HEADER */
 .header {
-    background-color: rgba(57, 64, 50, 0.945);
+    background-color: #b87e4be0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,57 +38,44 @@ body, html {
     display: flex;
 }
 
-.header li, .footer li {
+.header li {
     margin: 7px;
 }
 
-.header a, .footer a { 
-    color: #587b7fff;
+.header a { 
+    color: #523A34;
+    font-weight: bold;
     text-decoration: none;
 }
 
-.header a:hover, .footer a:hover {
+.header a:hover {
     color:  #8dab7fff;
     font-weight: bold ;
 }
 
-.footer {
-    background-color: rgba(57, 64, 50, 0.945);
-    height: 200px;
+.header li:hover {
+    transform: translate(0px, -7px);
+    transform-origin: center center;
 }
 
-.footer ul {
-    display: flex;
-    list-style: none;
-    width: 450px;
-    margin:  0 auto;
-    justify-content: center;
-}
-
-.footer div {
-    display: flex;
-    justify-content: center;
-    font-size: 20px;
-    margin: 50px;
-    font-style: italic;
-    
-}
+/* MAIN */
 
 main {
     min-height: 80vh;
     background-color: rgba(88, 123, 127, 0.274);
-    /* background-image:url(../imagenes/tienda4.jpg);
+    background-image:url(../imagenes/tienda4.jpg);
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 main .titulo {
     font-size: 30px;
     font-weight: bold;
-    color: rgba(57, 64, 50, 0.76);
+    color: #523A34; 
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     display: flex;
     justify-content: center;
     padding: 20px;
+    display: none;
 }
 
 main .titulo:hover {
@@ -100,14 +87,21 @@ main .titulo:hover {
     text-align: center;
     padding: 20px;
 }
+
+main .fondo-2 {
+    background-color: rgba(49, 47, 47, 0.808);
+    border-radius: 95px;
+    min-height: 80vh;
+}
+
 .grid-container {
 
     display: grid;
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
-    /* background-color: rgba(255, 255, 255, 0.541);
-    border-radius: 95px; */
+    padding: 10px;
+   
 }
 
 .grid-container img {
@@ -117,12 +111,11 @@ main .titulo:hover {
 
 .grid-container a {
     text-decoration: none;
-   color: rgb(57, 64, 50);
+   color: #b87e4be0;
 }
 
 .grid-container a:hover {
-    color:  #8dab7fff;
-    font-weight: bold ;
+   color: rgb(88, 123, 127);
 }
 
 
@@ -134,15 +127,6 @@ background-color: rgba(88, 123, 127, 0.185);
 border-radius: 10px;
 }
 
-
-.footer ul {
-    width: 180px;
-  }
-
-.footer-derechos{
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-}  
 .formulario  {
    width: 300px;
    margin: 0 auto;
@@ -199,10 +183,92 @@ p {
 .accordion {
     --bs-accordion-bg: #d1dbdc;
 }
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    background-color: #b87e4be0;
+}
+
+.footer .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.footer .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .grupo-1 .box figure img {
+    width: 215px;
+}
+
+.footer .grupo-1 .box h2 {
+    color: #523A34;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .grupo-1 .box a {
+    text-decoration: none;
+    color: #523A34;
+    transition: all 300ms ease;
+}
+
+.footer .grupo-1 .box p {
+    font-size: 10px;
+    padding: 5px;
+    font-weight: bolder;
+    color: #523A34;
+}
+
+.footer .grupo-1 .box a:hover {
+    color: rgba(47, 133, 133, 0.521);
+    font-weight: bold;
+}
+
+.footer .grupo-1 .red-social a {
+    display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+color: #fff;
+margin-right: 10px;
+background-color: #523A34;
+text-align: center;
+transition: all 300ms ease;
+}
+
+.footer .grupo-1 .red-social a:hover {
+    color: rgba(47, 133, 133, 0.521);
+}
+
+.footer .grupo-2 {
+    background-color: #816b57;
+    padding: 15px 10px;
+    text-align: center;
+}
+
 @media (max-width:780px) {
     .grid-container {
         grid-template-columns: repeat(2,1fr);
     }
+    .footer .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+    
 }
 
 
@@ -220,4 +286,11 @@ p {
     .grid-container {
         grid-template-columns: repeat(1,1fr);
     }
+    .footer .grupo-1 {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+
 }

@@ -1,0 +1,126 @@
+main {
+    min-height: 80vh;
+    background-color: rgba(88, 123, 127, 0.274);
+    background-image: url(../imagenes/tienda4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .titulo {
+      font-size: 30px;
+      font-weight: bold;
+      color: #523A34;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      display: none;
+  
+      &:hover {
+        color: rgba(47, 133, 133, 0.521);
+        transform: skew(8deg);
+      }
+    }
+  }
+  
+  .tienda-online {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  main .fondo-2 {
+    background-color: rgba(49, 47, 47, 0.808);
+    border-radius: 95px;
+    min-height: 80vh;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+  
+    img {
+      width: 250px;
+      border: 2px solid;
+    }
+  
+    a {
+      text-decoration: none;
+      color: #b87e4be0;
+  
+      &:hover {
+        color: rgb(88, 123, 127);
+      }
+    }
+  }
+  
+  .text-nosotros {
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgba(88, 123, 127, 0.185);
+    border-radius: 10px;
+  }
+  
+  .formulario {
+    width: 300px;
+    margin: 0 auto;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.377);
+    color: #999;
+    border-radius: 10px;
+    font-size: 1.3em;
+    transition: all 0.3s;
+  
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .field {
+    border: solid 1px #ccc;
+    padding: 7px;
+    width: 280px;
+  
+    &:focus {
+      border-color: rgb(88, 123, 127);
+    }
+  
+    &:hover {
+      transform: translate(1px, 1px);
+    }
+  }
+  
+  .formulario-texto {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  form {
+    p, span {
+      color: rgba(36, 34, 34, 0.808);
+    }
+  }
+  
+  p {
+    font-weight: bolder;
+  }
+  
+  .btn-form {
+    background-color: rgba(68, 209, 103, 0.63);
+    border-radius: 5px;
+    display: inline-block;
+    padding: 20px 15px;
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgb(0, 0, 0);
+    width: 250px;
+  
+    &:hover {
+      border-color: rgb(88, 123, 127);
+    }
+  }
+  
+  .accordion {
+    --bs-accordion-bg:#d1dbdc;
+  }
