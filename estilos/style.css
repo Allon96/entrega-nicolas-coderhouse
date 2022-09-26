@@ -1,9 +1,4 @@
-/* --steel-teal: #587b7fff;
---black-chocolate: #1e2019ff;
---kombu-green: #394032ff;
---asparagus: #8dab7fff;
---yellow-green-crayola: #cfee9eff; */
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Oxygen&family=Roboto+Condensed:ital,wght@1,300&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -18,44 +13,37 @@ body, html {
     position: relative;
 }
 /* HEADER */
-.header {
-    background-color: #b87e4be0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0px;
+
+.navbar-brand img {
+    width: 175px;
+    margin-left: 20px;
 }
 
-.header .logo {
-    padding: 2px;
-    height: 150px;
-    width: 50px;
+.navbar {
+    background-color:#b87e4be0 ;
+}
+.nav-link:hover{
+color: rgba(47, 133, 133, 0.521);
+font-weight: bold;
+}
+.nav-item {
+font-size: 20px;
+font-weight:bold;
+font-family: 'Roboto Condensed', sans-serif;
 }
 
-.header ul {
-    list-style: none;
-    display: flex;
+.nav-item:hover {
+        transform: translate(0px, -9px);
+        transform-origin: center center; 
+        transition: all 500ms ease;
 }
 
-.header li {
-    margin: 7px;
+.navbar-brand {
+    transition: all .3s ease;
 }
 
-.header a { 
-    color: #523A34;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.header a:hover {
-    color:  #8dab7fff;
-    font-weight: bold ;
-}
-
-.header li:hover {
-    transform: translate(0px, -7px);
-    transform-origin: center center;
+.navbar-brand:hover {
+    transform: scale(1.1);
 }
 
 /* MAIN */
@@ -87,10 +75,25 @@ main .titulo:hover {
     text-align: center;
     padding: 20px;
 }
+#carouselExampleControls {
+    margin-bottom: 50px;
+}
+.carousel-inner {
+height: 100%;
+padding: 10px 5px;
+background-color: rgba(0, 0, 0, 0.822);
+}
 
-main .fondo-2 {
-    background-color: rgba(49, 47, 47, 0.808);
-    border-radius: 95px;
+.carousel-inner img {
+    display: block;
+    max-width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border: 2px black solid;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.822);
     min-height: 80vh;
 }
 
@@ -101,6 +104,7 @@ main .fondo-2 {
     align-items: center;
     justify-items: center;
     padding: 10px;
+    background-color: rgba(0, 0, 0, 0.822);
    
 }
 
@@ -108,6 +112,11 @@ main .fondo-2 {
     width: 250px;
     border:2px solid;
 }
+
+.grid-container img:hover {
+    transform: scale(1.1);
+    transition: all .9s ease;
+} 
 
 .grid-container a {
     text-decoration: none;
@@ -117,14 +126,31 @@ main .fondo-2 {
 .grid-container a:hover {
    color: rgb(88, 123, 127);
 }
-
+.grid-container div p {
+    background-color: rgba(38, 51, 51, 0.527);
+    text-align: center;
+border: 2px black solid;
+padding: 3px;
+margin: 5px;
+}
+.fondo-2 {
+    background-color: rgba(0, 0, 0, 0.733);
+}
 
 .text-nosotros {
-text-align:center;
-font-weight: bolder;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-background-color: rgba(88, 123, 127, 0.185);
+    padding: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+width: 350px;
+background-color: rgba(0, 0, 0, 0.555);
 border-radius: 10px;
+}
+
+.text-nosotros p {
+    font-size: 17px;
+font-weight: bolder;
+font-family: 'Crimson Text', serif;
+color: #b87e4ba6;
 }
 
 .formulario  {
@@ -167,6 +193,7 @@ form span {
 }
 p {
     font-weight: bolder;
+    font-family: 'Crimson Text', serif;
 }
 .btn-form {
     background-color:rgba(68, 209, 103, 0.63);
@@ -187,7 +214,7 @@ p {
 /* FOOTER */
 .footer {
     width: 100%;
-    background-color: #b87e4be0;
+    background-color: #b87e4b;
 }
 
 .footer .grupo-1 {
