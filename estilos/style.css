@@ -81,7 +81,9 @@ main .titulo:hover {
 .carousel-inner {
 height: 100%;
 padding: 10px 5px;
-background-color: rgba(0, 0, 0, 0.822);
+background-color: rgba(0, 0, 0, 0.800);
+box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+   backdrop-filter: blur(4px);
 }
 
 .carousel-inner img {
@@ -103,13 +105,16 @@ main {
     grid-template-columns: repeat(3,1fr);
     align-items: center;
     justify-items: center;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.822);
-   
+ padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgba(0, 0, 0, 0.800);
+   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+   backdrop-filter: blur(4px);
 }
 
 .grid-container img {
-    width: 250px;
+    width: 200px;
     border:2px solid;
 }
 
@@ -134,16 +139,18 @@ padding: 3px;
 margin: 5px;
 }
 .fondo-2 {
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: rgba(0, 0, 0, 0.541);
 }
 
 .text-nosotros {
     padding: 20px;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-bottom: 20px;
-width: 350px;
-background-color: rgba(0, 0, 0, 0.555);
-border-radius: 10px;
+width: 300px;
+background-color: rgba(0, 0, 0, 0.356);
+box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+   backdrop-filter: blur(4px);
+border-radius: 20px;
 }
 
 .text-nosotros p {
@@ -158,10 +165,12 @@ color: #b87e4ba6;
    margin: 0 auto;
    padding: 12px;
    background-color:rgba(255, 255, 255, 0.377);
+   box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+   backdrop-filter: blur(3px);
    color: #999;
    border-radius: 10px;
    font-size: 1.3em;
-   transition: all .3s ;
+   transition: all .5s ;
 }
 
 .formulario:hover {
