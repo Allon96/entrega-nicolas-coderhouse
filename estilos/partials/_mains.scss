@@ -21,23 +21,34 @@ main {
       }
     }
   }
-  .texto-nov {
-    color: #b87e4be0;
-    text-align: center;
-    font-size: 15px;
-  }
+  
   .tienda-online {
     text-align: center;
     padding: 20px;
   }
   
-  .tienda-online:hover {
-    color: rgba(47, 133, 133, 0.521);
+  #carouselExampleControls {
+    margin-bottom: 50px;
   }
-
-  main .fondo-2 {
-    background-color: rgba(49, 47, 47, 0.808);
-    border-radius: 95px;
+  
+  .carousel-inner {
+    height: 100%;
+    padding: 10px 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+  
+    img {
+      display: block;
+      max-width: 95%;
+      height: auto;
+      margin: 0 auto;
+      border: 2px black solid;
+    }
+  }
+  
+  main {
+    background-color: rgba(0, 0, 0, 0.822);
     min-height: 80vh;
   }
   
@@ -46,11 +57,21 @@ main {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    padding: 10px;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
   
     img {
-      width: 250px;
+      width: 200px;
       border: 2px solid;
+  
+      &:hover {
+        transform: scale(1.1);
+        transition: all .9s ease;
+      }
     }
   
     a {
@@ -61,15 +82,63 @@ main {
         color: rgb(88, 123, 127);
       }
     }
+  
+    div p {
+      background-color: rgba(38, 51, 51, 0.527);
+      text-align: center;
+      border: 2px black solid;
+      padding: 3px;
+      margin: 5px;
+    }
+  }
+  
+  .grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  
+    img {
+      width: 300px;
+      border: 2px solid;
+      box-shadow: 20px 20px 32px rgb(31, 31, 32);
+  
+      &:hover {
+        transform: scale(1.5);
+        transition: all .5s ease;
+      }
+    }
+  }
+  
+  .tienda-online {
+    font-family: 'Crimson Text', serif;
+    font-size: 35px;
+  }
+  
+  .fondo-2 {
+    background-color: rgba(0, 0, 0, 0.541);
   }
   
   .text-nosotros {
-    text-align: center;
-    font-weight: bolder;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(88, 123, 127, 0.185);
-    color: #b87e4be0;
-    border-radius: 10px;
+    padding: 45px 20px;
+    margin: 0 auto;
+    font-weight: bold;
+    max-width: 560px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.801);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+  
+    p {
+      font-size: 17px;
+      font-weight: bolder;
+      font-family: 'Crimson Text', serif;
+      color: white;
+    }
   }
   
   .formulario {
@@ -77,10 +146,12 @@ main {
     margin: 0 auto;
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.377);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(3px);
     color: #999;
     border-radius: 10px;
     font-size: 1.3em;
-    transition: all 0.3s;
+    transition: all 0.5s;
   
     &:hover {
       transform: scale(1.1);
@@ -102,18 +173,20 @@ main {
   }
   
   .formulario-texto {
+    font-family: 'Crimson Text', serif;
     text-align: center;
     padding: 10px;
   }
   
   form {
-    p, span {
-      color: rgba(36, 34, 34, 0.808);
+    i p, span {
+      color: black;
     }
   }
   
   p {
     font-weight: bolder;
+    font-family: 'Crimson Text', serif;
   }
   
   .btn-form {
@@ -131,5 +204,21 @@ main {
   }
   
   .accordion {
-    --bs-accordion-bg:#b87e4be0;
+    --bs-accordion-bg:#da8f4d;
+    border: 2px black solid;
+  }
+  
+  .accordion-button {
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+    border: 1px black solid;
+  
+    &:hover {
+      color: black;
+    }
+  }
+  
+  .accordion-body {
+    font-family: 'Crimson Text', serif;
+    font-size: 17px;
   }

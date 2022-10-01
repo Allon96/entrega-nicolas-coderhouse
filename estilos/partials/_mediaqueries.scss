@@ -1,5 +1,17 @@
-@media (max-width: 780px) {
-    .grid-container {
+@media (max-width: 950px) {
+    .grid-container2 {
+      grid-template-columns: repeat(1, 1fr);
+  
+      img {
+        width: 300px;
+        border: 2px solid;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .grid-container, .grid-container2 {
       grid-template-columns: repeat(2, 1fr);
     }
   
@@ -8,6 +20,16 @@
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 50px;
       padding: 45px 0px;
+    }
+  
+    .grid-container2 {
+      grid-template-columns: repeat(1, 1fr);
+  
+      img {
+        width: 300px;
+        border: 2px solid;
+        margin-bottom: 10px;
+      }
     }
   }
   
@@ -27,10 +49,35 @@
       grid-template-columns: repeat(1, 1fr);
     }
   
+    .grid-container2 {
+      grid-template-columns: repeat(1, 1fr);
+  
+      img {
+        width: 300px;
+        border: 2px solid;
+        margin-bottom: 10px;
+  
+        &:hover {
+          transform: scale(1.5);
+          transition: all .5s ease;
+          overflow: hidden;
+        }
+      }
+    }
+  
+    .tienda-online {
+      font-family: 'Crimson Text', serif;
+      font-size: 35px;
+      background-color: rgba(0, 0, 0, 0.678);
+      color: white;
+      font-weight: bold;
+    }
+  
     .footer .grupo-1 {
       width: 100%;
       grid-template-columns: repeat(1, 1fr);
       grid-gap: 50px;
       padding: 45px 0px;
+      margin-left: 10px;
     }
   }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Oxygen&family=Roboto+Condensed:ital,wght@1,300&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -12,40 +13,36 @@ body, html {
   position: relative;
 }
 
-.header {
+.navbar-brand img {
+  width: 175px;
+  margin-left: 20px;
+}
+
+.navbar {
   background-color: rgba(184, 126, 75, 0.8784313725);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
 }
-.header .logo {
-  padding: 2px;
-  height: 150px;
-  width: 50px;
-}
-.header ul {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-}
-.header li {
-  margin: 7px;
-}
-.header a {
-  color: #523A34;
-  font-weight: bold;
-  text-decoration: none;
-}
-.header a:hover {
-  color: #8dab7f;
+
+.nav-link:hover {
+  color: rgba(47, 133, 133, 0.521);
   font-weight: bold;
 }
-.header li:hover {
-  transform: translate(0px, -7px);
+
+.nav-item {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.nav-item:hover {
+  transform: translate(0px, -9px);
   transform-origin: center center;
+  transition: all 500ms ease;
+}
+
+.navbar-brand {
+  transition: all 0.3s ease;
+}
+.navbar-brand:hover {
+  transform: scale(1.1);
 }
 
 main {
@@ -70,24 +67,33 @@ main .titulo:hover {
   transform: skew(8deg);
 }
 
-.texto-nov {
-  color: rgba(184, 126, 75, 0.8784313725);
-  text-align: center;
-  font-size: 15px;
-}
-
 .tienda-online {
   text-align: center;
   padding: 20px;
 }
 
-.tienda-online:hover {
-  color: rgba(47, 133, 133, 0.521);
+#carouselExampleControls {
+  margin-bottom: 50px;
 }
 
-main .fondo-2 {
-  background-color: rgba(49, 47, 47, 0.808);
-  border-radius: 95px;
+.carousel-inner {
+  height: 100%;
+  padding: 10px 5px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+.carousel-inner img {
+  display: block;
+  max-width: 95%;
+  height: auto;
+  margin: 0 auto;
+  border: 2px black solid;
+}
+
+main {
+  background-color: rgba(0, 0, 0, 0.822);
   min-height: 80vh;
 }
 
@@ -96,11 +102,21 @@ main .fondo-2 {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  padding: 10px;
+  padding: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
 }
 .grid-container img {
-  width: 250px;
+  width: 200px;
   border: 2px solid;
+}
+.grid-container img:hover {
+  transform: scale(1.1);
+  transition: all 0.9s ease;
 }
 .grid-container a {
   text-decoration: none;
@@ -109,14 +125,59 @@ main .fondo-2 {
 .grid-container a:hover {
   color: rgb(88, 123, 127);
 }
+.grid-container div p {
+  background-color: rgba(38, 51, 51, 0.527);
+  text-align: center;
+  border: 2px black solid;
+  padding: 3px;
+  margin: 5px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.grid-container2 img {
+  width: 300px;
+  border: 2px solid;
+  box-shadow: 20px 20px 32px rgb(31, 31, 32);
+}
+.grid-container2 img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease;
+}
+
+.tienda-online {
+  font-family: "Crimson Text", serif;
+  font-size: 35px;
+}
+
+.fondo-2 {
+  background-color: rgba(0, 0, 0, 0.541);
+}
 
 .text-nosotros {
-  text-align: center;
+  padding: 45px 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  max-width: 560px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  border-radius: 20px;
+}
+.text-nosotros p {
+  font-size: 17px;
   font-weight: bolder;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: rgba(88, 123, 127, 0.185);
-  color: rgba(184, 126, 75, 0.8784313725);
-  border-radius: 10px;
+  font-family: "Crimson Text", serif;
+  color: white;
 }
 
 .formulario {
@@ -124,10 +185,13 @@ main .fondo-2 {
   margin: 0 auto;
   padding: 12px;
   background-color: rgba(255, 255, 255, 0.377);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   color: #999;
   border-radius: 10px;
   font-size: 1.3em;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 .formulario:hover {
   transform: scale(1.1);
@@ -146,16 +210,18 @@ main .fondo-2 {
 }
 
 .formulario-texto {
+  font-family: "Crimson Text", serif;
   text-align: center;
   padding: 10px;
 }
 
-form p, form span {
-  color: rgba(36, 34, 34, 0.808);
+form i p, form span {
+  color: black;
 }
 
 p {
   font-weight: bolder;
+  font-family: "Crimson Text", serif;
 }
 
 .btn-form {
@@ -172,12 +238,27 @@ p {
 }
 
 .accordion {
-  --bs-accordion-bg:#b87e4be0;
+  --bs-accordion-bg:#da8f4d;
+  border: 2px black solid;
+}
+
+.accordion-button {
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  border: 1px black solid;
+}
+.accordion-button:hover {
+  color: black;
+}
+
+.accordion-body {
+  font-family: "Crimson Text", serif;
+  font-size: 17px;
 }
 
 .footer {
   width: 100%;
-  background-color: rgba(184, 126, 75, 0.8784313725);
+  background-color: #b87e4b;
 }
 .footer .grupo-1 {
   width: 100%;
@@ -238,8 +319,18 @@ p {
   text-align: center;
 }
 
+@media (max-width: 950px) {
+  .grid-container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-container2 img {
+    width: 300px;
+    border: 2px solid;
+    margin-bottom: 10px;
+  }
+}
 @media (max-width: 780px) {
-  .grid-container {
+  .grid-container, .grid-container2 {
     grid-template-columns: repeat(2, 1fr);
   }
   .footer .grupo-1 {
@@ -247,6 +338,14 @@ p {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+  }
+  .grid-container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-container2 img {
+    width: 300px;
+    border: 2px solid;
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 700px) {
@@ -262,10 +361,31 @@ p {
   .grid-container {
     grid-template-columns: repeat(1, 1fr);
   }
+  .grid-container2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid-container2 img {
+    width: 300px;
+    border: 2px solid;
+    margin-bottom: 10px;
+  }
+  .grid-container2 img:hover {
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+  .tienda-online {
+    font-family: "Crimson Text", serif;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    font-weight: bold;
+  }
   .footer .grupo-1 {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 50px;
     padding: 45px 0px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=estilo.css.map */
